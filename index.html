@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="https://kit.fontawesome.com/c479ba78f2.js" crossorigin="anonymous"></script>
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title-large">Decodificador de Texto - Alura Challenges Oracle ONE</h1>
+        <p class="body-medium">Decodificador de texto que permite criptografar ou descriptografar letras, substituindo
+            letras por códigos.</p>
+    </header>
+    <main>
+        <section class="container">
+            <div class="toggle__container">
+                <span>Qual a opção desejada?</span>
+                <label for="toggleBtn" class="toggle__container__toggle-label"></label>
+                <label class="toggle__container__switch" for="toggleBtn">
+                    <input type="checkbox" id="toggleBtn">
+                    <span class="toggle__container__switch-slider round"></span>
+                </label>
+            </div>
+            <div class="form__container__primary">
+                <label for="textoArea" class="form__container__primary-label">Qual palavra ou texto que deseja
+                    Criptografar?</label>
+                <textarea id="textoArea" placeholder="Digite seu texto ou palavra..."
+                    class="form__container__primary-text" autofocus></textarea>
+                <div class="error__message" id="errorMessage"><i class="fa-solid fa-triangle-exclamation"></i> Campo
+                    obrigatório! Por favor, insira palava ou um texto.</div>
+                <button id="acaoMainBtn" class="btn__primary">Criptografar</button>
+            </div>
+            <div class="form__container__secondary">
+                <label for="mensagemTexto" class="form__container__secondary__label">Segue o seu resultado:</label>
+                <textarea id="mensagemTexto" class="form__container__secondary__result-text" readonly
+                    placeholder="Aguardando sua ação para Criptografar ou Descriptografar"></textarea>
+                <button id="copiarBtn" class="btn__primary" disabled><i class="fa-regular fa-copy"></i> Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto do programa Oracle Next Education, Oracle + Alura - <Strong>Por: <i>Dener Patrick</i></Strong></p>
+    </footer>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
